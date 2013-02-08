@@ -1,0 +1,123 @@
+<html>
+  <head>
+	<style type="text/css">
+		@font-face {
+			font-family: 'digi';
+			src: url('http://cssdeck.com/uploads/resources/fonts/digii/DS-DIGII.TTF');
+			}
+
+		.container{
+			width: 900px;
+			height: 800px;
+			background: #d5cea6; /* Old browsers */
+			background: -moz-linear-gradient(left,  #d5cea6 0%, #c9c190 40%, #b7ad70 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, right top, color-stop(0%,#d5cea6), color-stop(40%,#c9c190), color-stop(100%,#b7ad70)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(left,  #d5cea6 0%,#c9c190 40%,#b7ad70 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(left,  #d5cea6 0%,#c9c190 40%,#b7ad70 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(left,  #d5cea6 0%,#c9c190 40%,#b7ad70 100%); /* IE10+ */
+			background: linear-gradient(to right,  #d5cea6 0%,#c9c190 40%,#b7ad70 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5cea6', endColorstr='#b7ad70',GradientType=1 ); /* IE6-9 */
+
+		}
+		.left{
+			float: left;
+		}
+		.label{
+			width: 300px;
+			height: 35px;
+			background: #fff;
+			position: relative;
+			margin: 10px;
+			box-shadow: -10px 10px 0px 0px rgba(0,0,0,0.1), -8px 8px 10px 0px rgba(0,0,0,0.2);
+		}
+		.content{
+			float: left;
+			width: 35%;
+			min-height: 400px;
+			background: #fff;
+			margin: 10px;
+			box-shadow: -10px 10px 0px 0px rgba(0,0,0,0.1), -8px 8px 10px 0px rgba(0,0,0,0.2);
+		}
+		.fieldContainer{
+			width: 55%;
+			float: left;
+		}
+		.fieldPos{
+			float: left;
+			width: 62%;
+			height: 35px;
+			background: #fff;
+			margin: 10 0 10 10;
+			font-size: 24;
+			text-align: center;
+			box-shadow: -10px 10px 0px 0px rgba(0,0,0,0.1), -8px 8px 10px 0px rgba(0,0,0,0.2);
+		}
+		.value{
+			float: right;
+			width: 34%;
+			height: 35px;
+			font-family: 'digi';	
+			background: #fff;
+			margin: 10 0 10 5;
+			font-weight: bold;
+			font-size: 36;
+			color: rgb(209, 0, 25);
+			text-align: center;
+			box-shadow: -10px 10px 0px 0px rgba(0,0,0,0.1), -8px 8px 10px 0px rgba(0,0,0,0.2);
+		}		
+		.header{
+			padding-top: 10%;
+			margin-left: auto;
+			margin-right: auto;
+			height: 100px;
+			background: #fff;
+			background-image: url("logo.png");
+			background-repeat:no-repeat;
+			background-size:100% 100%;
+			box-shadow: -10px 10px 0px 0px rgba(0,0,0,0.1), -8px 8px 10px 0px rgba(0,0,0,0.2);
+			margin: 50px 10px 30px 10px;
+		}
+		.footer{
+			width: 80%;
+			height: 40px;
+			font-variant: small-caps;
+			clear: both;
+			margin-left: auto;
+			margin-right: auto;
+			color: red;
+			background: #fff;
+			box-shadow: -10px 10px 0px 0px rgba(0,0,0,0.1), -8px 8px 10px 0px rgba(0,0,0,0.2);
+		}
+	</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header"></div>
+			<div class="content"><h3>Welcome to CardioPulse</h3><p>This is your message of the day!</p></div>
+			<div class="fieldContainer">
+				<div class="fieldPos" id="pos1">&#37; on-time starts:</div>
+				<div class="value">85</div>
+			</div>
+			<div class="fieldContainer">
+				<div class="fieldPos" id="pos1">avg. wait time (min)</div>
+				<div class="value">5</div>
+			</div>
+			<div class="fieldContainer">
+				<div class="fieldPos" id="pos2">patients cared for today</div>
+				<div class="value">123</div>
+			</div>
+			<div class="fieldContainer">
+				<div class="fieldPos" id="pos3">total patients this week</div>
+				<div class="value">123</div>
+			</div>									
+			<div class="fieldContainer">
+				<div class="fieldPos" id="pos3">last patient seen (minutes ago)</div>
+				<div class="value">5</div>
+			</div>
+
+			<div class="footer">Always dial 911 in an emergency.</div>
+			<footer>&copyIntelligent Business Solutions</footer>
+		</div>
+		
+	</body>
+</html>
